@@ -1,0 +1,19 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Chanel</th>
+      <th scope="col">Seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let serie of series">
+      <th scope="row">{{serie.id}}</th>
+      <td><a href="{{serie.webpage}}" target="_blank" rel="noopener noreferrer">{{serie.name}}</a></td>
+      <td>{{serie.channel}}</td>
+      <td>{{serie.seasons}}</td>
+    </tr>
+  </tbody>
+  <h5>Seasons average: {{averageSeasons}}</h5>
+</table>
